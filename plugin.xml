@@ -43,7 +43,8 @@
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" />
             <permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-            <uses-permission android:name="android.permission.CAMERA" android:required="true"/>
+            <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-feature android:name="android.hardware.camera" android:required="true"/>
         </config-file>
 
             <config-file target="AndroidManifest.xml" parent="application" mode="merge">
